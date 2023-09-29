@@ -395,7 +395,7 @@ $ pylint my_module.py
 
 ---
 
-### Check the **version** 
+## Check the **version** 
 
 - Check the python version when requirements are tight
     ```python
