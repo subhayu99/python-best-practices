@@ -1,0 +1,1775 @@
+<!DOCTYPE html><html lang="en-IN"><head><meta name="author" content="Subhayu Kumar Bala"><meta property="article:author" content="Subhayu Kumar Bala"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{-webkit-tap-highlight-color:transparent;-webkit-appearance:none;appearance:none;background-color:initial;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{view-transition-name:__bespoke_marp_transition_osc__;background:#000000a6;border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:#0000}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:#0000;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:#000000a6;border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{word-wrap:break-word;box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;scrollbar-color:#eeeeee80 #0000;scrollbar-width:thin;white-space:pre-wrap;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:#0000}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:#eeeeee80;border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>@charset "UTF-8";@import "https://fonts.bunny.net/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap";div#\:\$p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#\:\$p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#\:\$p>svg>foreignObject>section :is(h1,marp-h1){font-size:2em;margin:0.67em 0}div#\:\$p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p>svg>foreignObject>section{page-break-before:always;break-before:page}div#\:\$p>svg>foreignObject>section,div#\:\$p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#\:\$p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
+/*!
+ * Marp / Marpit Gaia theme.
+ *
+ * @theme gaia
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */div#\:\$p>svg>foreignObject>section :is(pre,marp-pre) code.hljs{display:block;overflow-x:auto;padding:1em}div#\:\$p>svg>foreignObject>section code.hljs{padding:3px 5px}div#\:\$p>svg>foreignObject>section .hljs{background:#000;color:#f8f8f8}div#\:\$p>svg>foreignObject>section .hljs-comment,div#\:\$p>svg>foreignObject>section .hljs-quote{color:#aeaeae;font-style:italic}div#\:\$p>svg>foreignObject>section .hljs-keyword,div#\:\$p>svg>foreignObject>section .hljs-selector-tag,div#\:\$p>svg>foreignObject>section .hljs-type{color:#e28964}div#\:\$p>svg>foreignObject>section .hljs-string{color:#65b042}div#\:\$p>svg>foreignObject>section .hljs-subst{color:#daefa3}div#\:\$p>svg>foreignObject>section .hljs-link,div#\:\$p>svg>foreignObject>section .hljs-regexp{color:#e9c062}div#\:\$p>svg>foreignObject>section .hljs-name,div#\:\$p>svg>foreignObject>section .hljs-section,div#\:\$p>svg>foreignObject>section .hljs-tag,div#\:\$p>svg>foreignObject>section .hljs-title{color:#89bdff}div#\:\$p>svg>foreignObject>section .hljs-class .hljs-title,div#\:\$p>svg>foreignObject>section .hljs-doctag,div#\:\$p>svg>foreignObject>section .hljs-title.class_{text-decoration:underline}div#\:\$p>svg>foreignObject>section .hljs-bullet,div#\:\$p>svg>foreignObject>section .hljs-number,div#\:\$p>svg>foreignObject>section .hljs-symbol{color:#3387cc}div#\:\$p>svg>foreignObject>section .hljs-params,div#\:\$p>svg>foreignObject>section .hljs-template-variable,div#\:\$p>svg>foreignObject>section .hljs-variable{color:#3e87e3}div#\:\$p>svg>foreignObject>section .hljs-attribute{color:#cda869}div#\:\$p>svg>foreignObject>section .hljs-meta{color:#8996a8}div#\:\$p>svg>foreignObject>section .hljs-formula{background-color:#0e2231;color:#f8f8f8;font-style:italic}div#\:\$p>svg>foreignObject>section .hljs-addition{background-color:#253b22;color:#f8f8f8}div#\:\$p>svg>foreignObject>section .hljs-deletion{background-color:#420e09;color:#f8f8f8}div#\:\$p>svg>foreignObject>section .hljs-selector-class{color:#9b703f}div#\:\$p>svg>foreignObject>section .hljs-selector-id{color:#8b98ab}div#\:\$p>svg>foreignObject>section .hljs-emphasis{font-style:italic}div#\:\$p>svg>foreignObject>section .hljs-strong{font-weight:700}div#\:\$p>svg>foreignObject>section :is(h1,marp-h1),div#\:\$p>svg>foreignObject>section :is(h2,marp-h2),div#\:\$p>svg>foreignObject>section :is(h3,marp-h3),div#\:\$p>svg>foreignObject>section :is(h4,marp-h4),div#\:\$p>svg>foreignObject>section :is(h5,marp-h5),div#\:\$p>svg>foreignObject>section :is(h6,marp-h6){margin:.5em 0 0}div#\:\$p>svg>foreignObject>section :is(h1,marp-h1) strong,div#\:\$p>svg>foreignObject>section :is(h2,marp-h2) strong,div#\:\$p>svg>foreignObject>section :is(h3,marp-h3) strong,div#\:\$p>svg>foreignObject>section :is(h4,marp-h4) strong,div#\:\$p>svg>foreignObject>section :is(h5,marp-h5) strong,div#\:\$p>svg>foreignObject>section :is(h6,marp-h6) strong{font-weight:inherit}div#\:\$p>svg>foreignObject>section :is(h1,marp-h1)::part(auto-scaling),div#\:\$p>svg>foreignObject>section :is(h2,marp-h2)::part(auto-scaling),div#\:\$p>svg>foreignObject>section :is(h3,marp-h3)::part(auto-scaling),div#\:\$p>svg>foreignObject>section :is(h4,marp-h4)::part(auto-scaling),div#\:\$p>svg>foreignObject>section :is(h5,marp-h5)::part(auto-scaling),div#\:\$p>svg>foreignObject>section :is(h6,marp-h6)::part(auto-scaling){max-height:580px}div#\:\$p>svg>foreignObject>section :is(h1,marp-h1){font-size:1.8em}div#\:\$p>svg>foreignObject>section :is(h2,marp-h2){font-size:1.5em}div#\:\$p>svg>foreignObject>section :is(h3,marp-h3){font-size:1.3em}div#\:\$p>svg>foreignObject>section :is(h4,marp-h4){font-size:1.1em}div#\:\$p>svg>foreignObject>section :is(h5,marp-h5){font-size:1em}div#\:\$p>svg>foreignObject>section :is(h6,marp-h6){font-size:.9em}div#\:\$p>svg>foreignObject>section blockquote,div#\:\$p>svg>foreignObject>section p{margin:1em 0 0}div#\:\$p>svg>foreignObject>section ol>li,div#\:\$p>svg>foreignObject>section ul>li{margin:.3em 0 0}div#\:\$p>svg>foreignObject>section ol>li>p,div#\:\$p>svg>foreignObject>section ul>li>p{margin:.6em 0 0}div#\:\$p>svg>foreignObject>section code{display:inline-block;font-family:Roboto Mono,monospace;font-size:.8em;letter-spacing:0;margin:-.1em .15em;padding:.1em .2em;vertical-align:baseline}div#\:\$p>svg>foreignObject>section :is(pre,marp-pre){display:block;margin:1em 0 0;overflow:visible}div#\:\$p>svg>foreignObject>section :is(pre,marp-pre) code{box-sizing:border-box;font-size:.7em;margin:0;min-width:100%;padding:.5em}div#\:\$p>svg>foreignObject>section :is(pre,marp-pre)::part(auto-scaling){max-height:calc(580px - 1em)}div#\:\$p>svg>foreignObject>section blockquote{margin:1em 0 0;padding:0 1em;position:relative}div#\:\$p>svg>foreignObject>section blockquote:after,div#\:\$p>svg>foreignObject>section blockquote:before{content:"“";display:block;font-family:Times New Roman,serif;font-weight:700;position:absolute}div#\:\$p>svg>foreignObject>section blockquote:before{left:0;top:0}div#\:\$p>svg>foreignObject>section blockquote:after{bottom:0;right:0;transform:rotate(180deg)}div#\:\$p>svg>foreignObject>section blockquote>:first-child{margin-top:0}div#\:\$p>svg>foreignObject>section mark{background:transparent}div#\:\$p>svg>foreignObject>section table{border-collapse:collapse;border-spacing:0;margin:1em 0 0}div#\:\$p>svg>foreignObject>section table td,div#\:\$p>svg>foreignObject>section table th{border-style:solid;border-width:1px;padding:.2em .4em}div#\:\$p>svg>foreignObject>section footer,div#\:\$p>svg>foreignObject>section header,div#\:\$p>svg>foreignObject>section:after{box-sizing:border-box;font-size:66%;height:70px;line-height:50px;overflow:hidden;padding:10px 25px;position:absolute}div#\:\$p>svg>foreignObject>section:after{--marpit-root-font-size:66%}div#\:\$p>svg>foreignObject>section header{top:0}div#\:\$p>svg>foreignObject>section footer,div#\:\$p>svg>foreignObject>section header{left:0;right:0}div#\:\$p>svg>foreignObject>section footer{bottom:0}div#\:\$p>svg>foreignObject>section{word-wrap:break-word;--color-background:#fff8e1;--color-background-stripe:rgba(69,90,100,.1);--color-foreground:#455a64;--color-dimmed:#6a7a7d;--color-highlight:#0288d1;background-color:var(--color-background);background-image:linear-gradient(135deg,hsla(0,0%,53%,0),hsla(0,0%,53%,.02) 50%,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.05));color:var(--color-foreground);font-family:Lato,Avenir Next,Avenir,Trebuchet MS,Segoe UI,sans-serif;font-size:35px;height:720px;letter-spacing:1.25px;line-height:1.35;padding:70px;width:1280px}div#\:\$p>svg>foreignObject>section{--marpit-root-font-size:35px}div#\:\$p>svg>foreignObject>section:after{bottom:0;font-size:80%;right:0}div#\:\$p>svg>foreignObject>section:after{--marpit-root-font-size:80%}div#\:\$p>svg>foreignObject>section a,div#\:\$p>svg>foreignObject>section mark{color:var(--color-highlight)}div#\:\$p>svg>foreignObject>section code{background:var(--color-dimmed);color:var(--color-background)}div#\:\$p>svg>foreignObject>section :is(h1,marp-h1) strong,div#\:\$p>svg>foreignObject>section :is(h2,marp-h2) strong,div#\:\$p>svg>foreignObject>section :is(h3,marp-h3) strong,div#\:\$p>svg>foreignObject>section :is(h4,marp-h4) strong,div#\:\$p>svg>foreignObject>section :is(h5,marp-h5) strong,div#\:\$p>svg>foreignObject>section :is(h6,marp-h6) strong{color:var(--color-highlight)}div#\:\$p>svg>foreignObject>section :is(pre,marp-pre){background:var(--color-foreground)}div#\:\$p>svg>foreignObject>section :is(pre,marp-pre)>code{background:transparent}div#\:\$p>svg>foreignObject>section blockquote:after,div#\:\$p>svg>foreignObject>section blockquote:before,div#\:\$p>svg>foreignObject>section footer,div#\:\$p>svg>foreignObject>section header,div#\:\$p>svg>foreignObject>section section:after{color:var(--color-dimmed)}div#\:\$p>svg>foreignObject>section table td,div#\:\$p>svg>foreignObject>section table th{border-color:var(--color-foreground)}div#\:\$p>svg>foreignObject>section table thead th{background:var(--color-foreground);color:var(--color-background)}div#\:\$p>svg>foreignObject>section table tbody>tr:nth-child(odd) td,div#\:\$p>svg>foreignObject>section table tbody>tr:nth-child(odd) th{background:var(--color-background-stripe,transparent)}div#\:\$p>svg>foreignObject>section>:first-child,div#\:\$p>svg>foreignObject>section>header:first-child+*{margin-top:0}div#\:\$p>svg>foreignObject>section:where(.invert){--color-background:#455a64;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#dad8c8;--color-highlight:#81d4fa}div#\:\$p>svg>foreignObject>section:where(.gaia){--color-background:#0288d1;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#cce2de;--color-highlight:#81d4fa}div#\:\$p>svg>foreignObject>section:where(.lead){display:flex;flex-flow:column nowrap;justify-content:center}div#\:\$p>svg>foreignObject>section:where(.lead) :is(h1,marp-h1),div#\:\$p>svg>foreignObject>section:where(.lead) :is(h2,marp-h2),div#\:\$p>svg>foreignObject>section:where(.lead) :is(h3,marp-h3),div#\:\$p>svg>foreignObject>section:where(.lead) :is(h4,marp-h4),div#\:\$p>svg>foreignObject>section:where(.lead) :is(h5,marp-h5),div#\:\$p>svg>foreignObject>section:where(.lead) :is(h6,marp-h6){text-align:center}div#\:\$p>svg>foreignObject>section:where(.lead) p{text-align:center}div#\:\$p>svg>foreignObject>section:where(.lead) blockquote>:is(h1,marp-h1),div#\:\$p>svg>foreignObject>section:where(.lead) blockquote>:is(h2,marp-h2),div#\:\$p>svg>foreignObject>section:where(.lead) blockquote>:is(h3,marp-h3),div#\:\$p>svg>foreignObject>section:where(.lead) blockquote>:is(h4,marp-h4),div#\:\$p>svg>foreignObject>section:where(.lead) blockquote>:is(h5,marp-h5),div#\:\$p>svg>foreignObject>section:where(.lead) blockquote>:is(h6,marp-h6),div#\:\$p>svg>foreignObject>section:where(.lead) blockquote>p{text-align:left}div#\:\$p>svg>foreignObject>section:where(.lead) ol>li>p,div#\:\$p>svg>foreignObject>section:where(.lead) ul>li>p{text-align:left}div#\:\$p>svg>foreignObject>section:where(.lead) table{margin-left:auto;margin-right:auto}div#\:\$p>svg>foreignObject>section{width:1280px;height:720px}div#\:\$p>svg>foreignObject>:where(section):not([root]){width:1280px;height:720px;font-size:30px;padding:calc(var(--marpit-root-font-size, 1rem) * 1.5)}div#\:\$p>svg>foreignObject>:where(section):not([root]){--marpit-root-font-size:30px}div#\:\$p>svg>foreignObject>section footer,div#\:\$p>svg>foreignObject>section header{text-align:right}div#\:\$p>svg>foreignObject>section[data-marpit-scope-MTmvgaBz] :is(h1,marp-h1){color:#ff0000;font-size:60px;text-align:center;padding-bottom:calc(var(--marpit-root-font-size, 1rem) * 1)}div#\:\$p>svg>foreignObject>section[data-marpit-scope-MTmvgaBz]{color:white;font-size:25px;text-align:justify;padding:calc(var(--marpit-root-font-size, 1rem) * 5)};div#\:\$p>svg>foreignObject>section[data-marpit-scope-MTmvgaBz]{--marpit-root-font-size:25px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-zZtwuFSw] li{font-size:25px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-zZtwuFSw] code{font-size:20px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-fT9CzWAi] li{font-size:24px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-fT9CzWAi] code{font-size:20px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-yAXnZQuH] li{font-size:24px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-yAXnZQuH] code{font-size:18px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-dmURcU85] p{font-size:25px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-dmURcU85] code{font-size:21px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-g9s0tCxx] li{font-size:24px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-g9s0tCxx] code{font-size:20px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-oaiQX0mD] li{font-size:24px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-oaiQX0mD] code{font-size:20px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-C49El34c] li{font-size:24px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-C49El34c] code{font-size:20px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-AlVzAAIq] li{font-size:24px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-AlVzAAIq] code{font-size:20px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-jo9dUNsH] :is(h1,marp-h1){font-size:60px;text-align:left;padding:20px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-jo9dUNsH] :is(h6,marp-h6){text-align:right}div#\:\$p>svg>foreignObject>section[data-marpit-scope-jo9dUNsH] blockquote{padding:20px;margin-left:20px;margin-right:20px;font-size:32px;text-align:left}div#\:\$p>svg>foreignObject>section[data-marpit-scope-JmYMrYS4] :is(h1,marp-h1){font-size:100px;
+        /* text-align: center; */padding-top:220px;color:#353540}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content],div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#\:\$p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="skip" data-background-color="#88" data-class="lead" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" class="lead" style="--paginate:skip;--background-color:#88;--class:lead;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;background-color:#88;background-image:none;" data-size="16:9">
+<h1 id="python-best-practices">Python <strong>Best Practices</strong></h1>
+<p>by <strong>Subhayu Kumar Bala</strong></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-marpit-scope-MTmvgaBz="" data-paginate="skip" data-background-color="black" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" style="--paginate:skip;--background-color:black;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;background-color:black;background-image:none;" data-size="16:9">
+<h1 id="disclaimer">Disclaimer</h1>
+<p><strong>Please Note:</strong> This presentation is not an Introduction to Python.</p>
+<p>It assumes a basic familiarity with Python programming concepts and focuses on best practices and advanced topics. If you are new to Python, we recommend starting with introductory resources before diving into the topics covered here.</p>
+<p>This presentation is designed for those who have some experience with Python and want to explore more advanced techniques and best practices.</p>
+<p>Although, if you have any questions, please feel free to stop me and ask.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="1" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="follow-the-pep-8-style-guide-for-python-code">Follow the <strong>PEP 8</strong> Style Guide for Python Code</h2>
+<ul>
+<li>
+<p><strong>Indentation</strong>: Use <strong>4</strong>-space indentation.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">bad_function</span>():
+  <span class="hljs-keyword">if</span> <span class="hljs-literal">True</span>:
+      <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Poor indentation!!!&quot;</span>)
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">better_function</span>():
+    <span class="hljs-keyword">if</span> <span class="hljs-literal">True</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Indented properly&quot;</span>)
+</code></pre>
+</li>
+<li>
+<p><strong>Maximum Line Length</strong>: Lines of code should be no longer than <strong>79</strong> characters. For docstrings and comments, the limit is <strong>72</strong> characters.</p>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="2" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>
+<p><strong>Imports</strong>: Imports should be grouped and placed at the top of the file. Standard library imports should come first, followed by third-party library imports, and finally, your own module imports.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># bad import style</span>
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> fastapi
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> pydantic <span class="hljs-keyword">import</span> model
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># better way to import</span>
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">import</span> fastapi
+<span class="hljs-keyword">from</span> pydantic <span class="hljs-keyword">import</span> model
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="3" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>
+<p><strong>Whitespace in Expressions and Statements</strong>: PEP 8 specifies guidelines for using whitespace around operators and commas, making your code more readable.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Inconsistent</span>
+x=<span class="hljs-number">5</span>
+y = <span class="hljs-number">10</span>
+
+<span class="hljs-comment"># Consistent</span>
+x = <span class="hljs-number">5</span>
+y = <span class="hljs-number">10</span>
+</code></pre>
+</li>
+<li>
+<p><strong>Blank Lines</strong>: PEP 8 suggests using blank lines to separate functions, classes, and logical sections of code to improve readability.</p>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="4" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li><strong>Naming Conventions</strong>: PEP 8 provides rules for naming variables, constants, functions, classes, and modules.<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Bad</span>
+x = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;number of heads: &quot;</span>))
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">camelman</span>:
+    l = <span class="hljs-number">4</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, h: <span class="hljs-built_in">int</span></span>):
+        self.h = h
+
+<span class="hljs-comment"># Good</span>
+num_heads = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;number of heads: &quot;</span>))
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">CamelMan</span>:
+    LEGS = <span class="hljs-number">4</span> <span class="hljs-comment"># tells you this is a constant</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, head: <span class="hljs-built_in">int</span></span>):
+        self.head = head
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="5" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>
+<p><strong>Comments and Docstrings</strong>: Document your code with comments and docstrings.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>):
+    <span class="hljs-string">&quot;&quot;&quot;Adds two numbers.&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">return</span> a + b
+</code></pre>
+</li>
+<li>
+<p><strong>Other Coding Recommendations</strong>: PEP 8 covers many other coding recommendations, such as how to handle exceptions, how to format long expressions, and how to use whitespace inside parentheses and square brackets.</p>
+</li>
+</ul>
+<p>Visit for reference: <a href="https://peps.python.org/pep-0008/">https://peps.python.org/pep-0008/</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="6" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<h2 id="list-comprehensions"><strong>List</strong> Comprehensions</h2>
+<ul>
+<li>Use list comprehensions for concise code.</li>
+<li>They are more concise and often faster than equivalent for-loops.</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]
+
+<span class="hljs-comment"># Without list comprehension</span>
+squared = []
+<span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> numbers:
+    squared.append(num * num)
+
+<span class="hljs-comment"># With list comprehension</span>
+squared = [num * num <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> numbers]
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="7" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<h2 id="setting-dictionary-values"><strong>Set</strong>ting dictionary values</h2>
+<ul>
+<li>Let's say we have a dictionary named <code>category_items_map</code>.</li>
+<li>Now if we want to an item to the <code>&quot;flowers&quot;</code> category in the dictionary. <em>Assuming we don't know the existing contents</em><pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-comment"># Most of us use the following syntax</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>category_items_map[<span class="hljs-string">&quot;flowers&quot;</span>] = category_items_map.get(<span class="hljs-string">&quot;flowers&quot;</span>, []) + [<span class="hljs-string">&quot;lily&quot;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-comment"># A better way would be to use</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>category_items_map.setdefault(<span class="hljs-string">&quot;flowers&quot;</span>, []).append(<span class="hljs-string">&quot;lotus&quot;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>category_items_map
+{<span class="hljs-string">&quot;flowers&quot;</span>: [<span class="hljs-string">&quot;rose&quot;</span>, <span class="hljs-string">&quot;lily&quot;</span>, <span class="hljs-string">&quot;lily&quot;</span>]}
+</code></pre>
+</li>
+<li>The above <code>setdefault()</code> method functionality can be achieved using the <a href="https://realpython.com/python-defaultdict/"><strong><code>defaultdict</code></strong></a> class from the <code>collections</code> module. The only difference is that it's not as flexible in terms of the type of the default values.</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="8" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<h2 id="getting-values-from-dictionary"><strong>Get</strong>ting values from dictionary</h2>
+<ul>
+<li>Use <code>.get()</code> method instead of third bracket notation <code>[]</code>.</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>number_names = {
+<span class="hljs-meta">... </span>    <span class="hljs-number">1</span>: <span class="hljs-string">&quot;one&quot;</span>,
+<span class="hljs-meta">... </span>    <span class="hljs-number">2</span>: <span class="hljs-string">&quot;two&quot;</span>,
+<span class="hljs-meta">... </span>    <span class="hljs-number">3</span>: <span class="hljs-string">&quot;three&quot;</span>,
+<span class="hljs-meta">... </span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>number_names[<span class="hljs-number">4</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>number_names.get(<span class="hljs-number">4</span>, <span class="hljs-string">&quot;not found&quot;</span>)
+<span class="hljs-string">&#x27;not found&#x27;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="9" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<h2 id="asserting-earlier-is-better-than-afterwards"><strong>Assert</strong>ing earlier is better than afterwards</h2>
+<ul>
+<li>Check for values before sending them into a complex/time-consuming logic.</li>
+<li>Here's an example of a poorly executed logic:<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_orders_by_ids</span>(<span class="hljs-params">provider: <span class="hljs-built_in">str</span>, ids: <span class="hljs-built_in">list</span>[<span class="hljs-built_in">int</span>]</span>):
+<span class="hljs-meta">... </span>   raw_orders: <span class="hljs-built_in">list</span>[<span class="hljs-built_in">dict</span>] = scrape_website_orders(provider) <span class="hljs-comment"># takes 30-40 seconds</span>
+<span class="hljs-meta">... </span>   <span class="hljs-keyword">return</span> [
+<span class="hljs-meta">... </span>       order <span class="hljs-keyword">for</span> order <span class="hljs-keyword">in</span> raw_orders
+<span class="hljs-meta">... </span>       <span class="hljs-keyword">if</span> order.get(<span class="hljs-string">&quot;id&quot;</span>) <span class="hljs-keyword">in</span> ids
+<span class="hljs-meta">... </span>   ]
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>get_orders_by_ids(<span class="hljs-string">&quot;grubhub&quot;</span>, <span class="hljs-number">123</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">8</span>, <span class="hljs-keyword">in</span> get_orders_by_ids
+TypeError: argument of <span class="hljs-built_in">type</span> <span class="hljs-string">&#x27;int&#x27;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> iterable
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="10" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>
+<p>A better approach</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_orders_by_ids</span>(<span class="hljs-params">provider: <span class="hljs-built_in">str</span>, ids: <span class="hljs-built_in">list</span>[<span class="hljs-built_in">int</span>]</span>):
+<span class="hljs-meta">... </span>   <span class="hljs-keyword">assert</span> <span class="hljs-built_in">isinstance</span>(ids, <span class="hljs-built_in">list</span>), <span class="hljs-string">&quot;Please pass a list of ids&quot;</span> <span class="hljs-comment"># &lt;---- makes a difference</span>
+<span class="hljs-meta">... </span>   raw_orders: <span class="hljs-built_in">list</span>[<span class="hljs-built_in">dict</span>] = scrape_website_orders(provider) <span class="hljs-comment"># takes 30-40 seconds</span>
+<span class="hljs-meta">... </span>   <span class="hljs-keyword">return</span> [
+<span class="hljs-meta">... </span>       order <span class="hljs-keyword">for</span> order <span class="hljs-keyword">in</span> raw_orders
+<span class="hljs-meta">... </span>       <span class="hljs-keyword">if</span> order.get(<span class="hljs-string">&quot;id&quot;</span>) <span class="hljs-keyword">in</span> ids
+<span class="hljs-meta">... </span>   ]
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>get_orders_by_ids(<span class="hljs-string">&quot;grubhub&quot;</span>, <span class="hljs-number">123</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">2</span>, <span class="hljs-keyword">in</span> get_orders_by_ids
+AssertionError: Please <span class="hljs-keyword">pass</span> a <span class="hljs-built_in">list</span> of ids
+</code></pre>
+</li>
+<li>
+<p>Both of these throws an error. The only difference is that the second one throws the error immediately without wasting time/resource in scraping the website.</p>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="11" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="exception-handling">Exception Handling</h2>
+<ul>
+<li>Handle exceptions with try-except blocks.</li>
+<li>Be specific about the exceptions.<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">divide</span>(<span class="hljs-params">x: <span class="hljs-built_in">float</span>, y: <span class="hljs-built_in">float</span></span>):
+    <span class="hljs-keyword">try</span>:
+        result = x / y
+    <span class="hljs-keyword">except</span> ZeroDivisionError:
+        result = <span class="hljs-literal">None</span>
+    <span class="hljs-keyword">return</span> result
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-marpit-scope-zZtwuFSw="" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="12" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="minimalism--complexity"><strong>Minimalism</strong> &gt; <strong>Co</strong>mp<strong>le</strong>xi<strong>ty</strong></h2>
+<ul>
+<li>
+<p>Use minimal code. Here's an example</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Why use try-except?</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">divide</span>(<span class="hljs-params">x: <span class="hljs-built_in">float</span>, y: <span class="hljs-built_in">float</span></span>):
+    <span class="hljs-keyword">if</span> y == <span class="hljs-number">0</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>
+    <span class="hljs-keyword">return</span> x / y
+</code></pre>
+</li>
+<li>
+<p>Use fewer lines of code if it doesn't hamper readability.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Why use an if statement?</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">divide</span>(<span class="hljs-params">x: <span class="hljs-built_in">float</span>, y: <span class="hljs-built_in">float</span></span>):
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span> <span class="hljs-keyword">if</span> y == <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> x / y
+
+<span class="hljs-comment"># Want others to scratch their heads? Try this</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">divide</span>(<span class="hljs-params">x: <span class="hljs-built_in">float</span>, y: <span class="hljs-built_in">float</span></span>):
+    <span class="hljs-keyword">return</span> (x / y, <span class="hljs-literal">None</span>)[y == <span class="hljs-number">0</span>]
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-scope-fT9CzWAi="" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="13" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="modularize-code"><strong>Modul</strong>arize Cod<strong>e</strong></h2>
+<ul>
+<li>Break code into reusable functions and modules.</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Non-modular code</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Rectangle</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, width: <span class="hljs-built_in">int</span>, height: <span class="hljs-built_in">int</span></span>):
+        ...
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Square</span>(<span class="hljs-title class_ inherited__">Rectangle</span>):
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, side: <span class="hljs-built_in">int</span></span>):
+        <span class="hljs-built_in">super</span>().__init__(side, side)
+
+r = Rectangle(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>)
+s = Square(<span class="hljs-number">10</span>)
+
+<span class="hljs-comment"># Modular code</span>
+<span class="hljs-keyword">from</span> geometry <span class="hljs-keyword">import</span> Rectangle, Square
+
+r = Rectangle(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>)
+s = Square(<span class="hljs-number">10</span>)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="14" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="linting-and-code-analysis">Linting and Code Analysis</h2>
+<ul>
+<li>Use static code analysis tools.</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">pylint my_module.py</span>
+</code></pre>
+<ul>
+<li>For linting directly from editor, use
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter">black</a> <em># personal favorite</em></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.pylint">Pylint</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.flake8">flake8</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker">mypy</a></li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="15" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h3 id="check-the-version">Check the <strong>version</strong></h3>
+<ul>
+<li>Check the python version when requirements are tight<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sys.version_info &gt;= (<span class="hljs-number">3</span>, <span class="hljs-number">10</span>):
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Need python 3.10 or higher&quot;</span>)
+    exit() <span class="hljs-comment"># this is not required, but should be used when the codebase needs the mentioned version</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="use-virtual-environments">Use <strong>v</strong>irtual <strong>env</strong>ironments</h2>
+<ul>
+<li>Use virtual environments to keep your project isolated from other projects.<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">python -m venv myenv</span>
+<span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">source</span> myenv/bin/activate</span>
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="16" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="write-object-oriented-code">Write <strong>Object</strong>-Oriented Code</h2>
+<ul>
+<li>Not using OOP can lead to unstructured and hard-to-maintain code as your project grows. You may end up with functions and variables scattered across your codebase, making it challenging to manage. Here's an example without using OOP:<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">create_car</span>(<span class="hljs-params">make: <span class="hljs-built_in">str</span>, model: <span class="hljs-built_in">str</span></span>):
+    <span class="hljs-keyword">return</span> {<span class="hljs-string">&quot;make&quot;</span>: make, <span class="hljs-string">&quot;model&quot;</span>: model, <span class="hljs-string">&quot;speed&quot;</span>: <span class="hljs-number">0</span>}
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">accelerate</span>(<span class="hljs-params">car, mph: <span class="hljs-built_in">float</span></span>):
+    car[<span class="hljs-string">&quot;speed&quot;</span>] += mph
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Accelerating <span class="hljs-subst">{car[<span class="hljs-string">&#x27;make&#x27;</span>]}</span> <span class="hljs-subst">{car[<span class="hljs-string">&#x27;model&#x27;</span>]}</span> to <span class="hljs-subst">{car[<span class="hljs-string">&#x27;speed&#x27;</span>]}</span> mph.&quot;</span>)
+
+<span class="hljs-comment"># Usage</span>
+my_car = create_car(<span class="hljs-string">&quot;Toyota&quot;</span>, <span class="hljs-string">&quot;Camry&quot;</span>)
+accelerate(my_car, <span class="hljs-number">30</span>)
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="17" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>When working on larger projects, use object-oriented programming (OOP) principles to organize your code into classes and objects. Here's a better way to create a car using OOP:<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Car</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, make: <span class="hljs-built_in">str</span>, model: <span class="hljs-built_in">str</span></span>):
+        self.make = make
+        self.model = model
+        self.speed = <span class="hljs-number">0</span>
+    
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">accelerate</span>(<span class="hljs-params">self, mph: <span class="hljs-built_in">float</span></span>):
+        self.speed += mph
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Accelerating <span class="hljs-subst">{self.make}</span> <span class="hljs-subst">{self.model}</span> to <span class="hljs-subst">{self.speed}</span> mph.&quot;</span>)
+
+<span class="hljs-comment"># Usage</span>
+my_car = Car(<span class="hljs-string">&quot;Toyota&quot;</span>, <span class="hljs-string">&quot;Camry&quot;</span>)
+my_car.accelerate(<span class="hljs-number">30</span>)
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="18" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="use-__dunder__-methods">Use __<strong>dunder</strong>__ methods</h2>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> time
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TimerContext</span>:
+    elapsed_time = <span class="hljs-number">0.0</span>
+
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__str__</span>(<span class="hljs-params">self</span>) -&gt; <span class="hljs-built_in">str</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">f&quot;Start: <span class="hljs-subst">{self.start_time:<span class="hljs-number">.3</span>f}</span> | End: <span class="hljs-subst">{self.end_time:<span class="hljs-number">.3</span>f}</span> | Elapsed: <span class="hljs-subst">{self.elapsed_time:<span class="hljs-number">.3</span>f}</span>&quot;</span>
+    
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__enter__</span>(<span class="hljs-params">self</span>):
+        self.start_time = time.perf_counter()
+        <span class="hljs-keyword">return</span> self  <span class="hljs-comment"># Return an object that represents the context</span>
+    
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__exit__</span>(<span class="hljs-params">self, exc_type, exc_value, traceback</span>):
+        self.end_time = time.perf_counter()
+        self.elapsed_time = self.end_time - self.start_time
+        <span class="hljs-built_in">print</span>(self) <span class="hljs-comment"># This internally calls the `__str__` method</span>
+
+<span class="hljs-keyword">with</span> TimerContext() <span class="hljs-keyword">as</span> timer: <span class="hljs-comment"># Call the __enter__ method</span>
+    <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1000000</span>):
+        <span class="hljs-keyword">pass</span>  <span class="hljs-comment"># Simulate some work</span>
+<span class="hljs-comment"># After the block, the __exit__ method is automatically</span>
+<span class="hljs-built_in">print</span>(timer.elapsed_time) <span class="hljs-comment"># The context manager stays persistent</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-marpit-scope-yAXnZQuH="" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="19" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="use-pathlibpath-for-storing-paths">Use <strong>pathlib.Path</strong> for storing paths</h2>
+<ul>
+<li>When dealing with file paths, use Python's pathlib module for better cross-platform compatibility and path manipulation.</li>
+<li>Not using pathlib.Path can lead to code that may break on different operating systems due to inconsistent path separators, making your code less portable.</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Bad (using string paths)</span>
+<span class="hljs-keyword">import</span> os
+
+data_dir = <span class="hljs-string">&quot;data&quot;</span>
+file_path = data_dir + <span class="hljs-string">&quot;/file.txt&quot;</span> <span class="hljs-comment"># this won&#x27;t work on windows</span>
+<span class="hljs-keyword">if</span> os.path.exists(file_path): 
+    file_name = file_path.split(<span class="hljs-string">&quot;/&quot;</span>)[-<span class="hljs-number">1</span>] <span class="hljs-comment"># does this look good?</span>
+
+<span class="hljs-comment"># Good</span>
+<span class="hljs-keyword">from</span> pathlib <span class="hljs-keyword">import</span> Path
+
+data_dir = Path(<span class="hljs-string">&quot;data&quot;</span>)
+file_path = data_dir / <span class="hljs-string">&quot;file.txt&quot;</span> <span class="hljs-comment"># this will work everywhere</span>
+<span class="hljs-keyword">if</span> file_path.exists(): 
+    file_name = file_path.name <span class="hljs-comment"># isn&#x27;t this more elegant?</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="20" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="use-relative-paths-instead-of-absolute-paths">Use relative paths instead of absolute paths</h2>
+<ul>
+<li>Whenever possible, use relative file paths instead of absolute file paths to make your code more portable and independent of the file system structure.<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Good (relative path)</span>
+aliens_dir = Path(<span class="hljs-string">&quot;aliens&quot;</span>)
+proof_path = aliens_dir / <span class="hljs-string">&quot;proof.mp4&quot;</span>
+
+<span class="hljs-comment"># Bad (absolute path)</span>
+proof_path = Path(<span class="hljs-string">&quot;/home/subhayu/area51/aliens/proof.mp4&quot;</span>)
+</code></pre>
+</li>
+<li>Using absolute paths makes your code less portable. If the project is moved to a different directory or another system, the absolute paths may not point to the correct locations, causing errors and making the code less flexible.</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-marpit-scope-dmURcU85="" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="21" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="use-f-strings">Use <strong>f</strong>-strings</h2>
+<p>When formatting strings in Python, use f-strings (formatted string literals) for improved readability and simplicity.</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">name, age = <span class="hljs-string">&quot;Steve Rogers&quot;</span>, <span class="hljs-number">100</span>
+
+message = <span class="hljs-string">&quot;Hello, my name is &quot;</span> + name + <span class="hljs-string">&quot; and I am &quot;</span> + <span class="hljs-built_in">str</span>(age) + <span class="hljs-string">&quot; years old.&quot;</span> <span class="hljs-comment"># Bad</span>
+message = <span class="hljs-string">f&quot;Hello, my name is <span class="hljs-subst">{name}</span> and I am <span class="hljs-subst">{age}</span> years old.&quot;</span> <span class="hljs-comment"># Good</span>
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a, b, c = <span class="hljs-number">1</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-number">3.0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">f&quot;<span class="hljs-subst">{a = }</span>, <span class="hljs-subst">{b = }</span>, <span class="hljs-subst">{c = }</span>&quot;</span> <span class="hljs-comment"># Using equals gives the values</span>
+<span class="hljs-string">&quot;a = 1, b = &#x27;two&#x27;, c = 3.0&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">f&quot;<span class="hljs-subst">{<span class="hljs-number">25</span>/<span class="hljs-number">200</span>:<span class="hljs-number">.2</span>%}</span>&quot;</span> <span class="hljs-comment"># Converting to percentage</span>
+<span class="hljs-string">&#x27;12.50%&#x27;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">f&quot;$<span class="hljs-subst">{<span class="hljs-number">1234567890</span>:,}</span>&quot;</span> <span class="hljs-comment"># Thousands separator</span>
+<span class="hljs-string">&#x27;$1,234,567,890&#x27;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">f&quot;Decimal: <span class="hljs-subst">{<span class="hljs-number">16</span>}</span>, Binary: <span class="hljs-subst">{<span class="hljs-number">16</span>:b}</span>, Octal: <span class="hljs-subst">{<span class="hljs-number">16</span>:o}</span>, Hex: <span class="hljs-subst">{<span class="hljs-number">16</span>:x}</span>&quot;</span> <span class="hljs-comment"># Convert to other bases</span>
+<span class="hljs-string">&#x27;Decimal: 16, Binary: 10000, Octal: 20, Hex: 10&#x27;</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-marpit-scope-g9s0tCxx="" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="22" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="use-a-config-file-for-storing-project-settings">Use a config file for storing project settings</h2>
+
+<ul>
+<li>
+<p>Store project-specific settings, such as database URLs, API keys, and other configuration parameters, in a separate configuration file.</p>
+</li>
+<li>
+<p>There are lots of different ways to do this. You can use <strong>.env</strong>, <strong>.yaml</strong>, <strong>.ini</strong>, etc...</p>
+</li>
+<li>
+<p>Personally, I like to use .env files. Here's an example:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># .env</span>
+DATABASE_URL=<span class="hljs-string">&#x27;postgres://tony:jarvis@localhost:5432/avengers&#x27;</span>
+HTTP_PORT=<span class="hljs-number">5000</span>
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># config.py</span>
+<span class="hljs-keyword">from</span> dotenv <span class="hljs-keyword">import</span> load_dotenv
+
+load_dotenv()
+
+DATABASE_URL = os.getenv(<span class="hljs-string">&quot;DATABASE_URL&quot;</span>)
+HTTP_PORT = <span class="hljs-built_in">int</span>(os.getenv(<span class="hljs-string">&quot;HTTP_PORT&quot;</span>, <span class="hljs-number">8080</span>))
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-marpit-scope-oaiQX0mD="" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="23" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="always-create-an-uniform-interface">Always create an uniform interface</h2>
+<ul>
+<li>Here, <strong>interface</strong> can be a class, function, or module that does the same task.</li>
+<li>The below example shows how easy it is to query a database using a class.</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ComicDB</span>:
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, url: <span class="hljs-built_in">str</span></span>):
+        ...
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">query</span>(<span class="hljs-params">self, collection: <span class="hljs-built_in">str</span>, query: <span class="hljs-built_in">dict</span> = {}</span>):
+        ...
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">insert</span>(<span class="hljs-params">self, collection: <span class="hljs-built_in">str</span>, data: <span class="hljs-built_in">dict</span></span>):
+        ...
+
+DB = ComicDB(<span class="hljs-string">&quot;mongodb://localhost:27017/&quot;</span>)
+
+mcu_heroes = DB.query(<span class="hljs-string">&quot;heroes&quot;</span>, {<span class="hljs-string">&quot;universe&quot;</span>: <span class="hljs-string">&quot;Marvel&quot;</span>})
+mcu_villains = DB.query(<span class="hljs-string">&quot;villains&quot;</span>, {<span class="hljs-string">&quot;universe&quot;</span>: <span class="hljs-string">&quot;Marvel&quot;</span>})
+
+dc_heroes = DB.query(<span class="hljs-string">&quot;heroes&quot;</span>, {<span class="hljs-string">&quot;universe&quot;</span>: <span class="hljs-string">&quot;DC&quot;</span>})
+dc_villains = DB.query(<span class="hljs-string">&quot;villains&quot;</span>, {<span class="hljs-string">&quot;universe&quot;</span>: <span class="hljs-string">&quot;DC&quot;</span>})
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="24" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="tips-to-improve-your-python-game"><strong>Tips</strong> to improve your Python Game</h2>
+<ul>
+<li>Unpacking iterables<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a, b, c = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>a, c
+(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a, b, *c, d = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>a, b, c, d
+(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>], <span class="hljs-number">5</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>d = {<span class="hljs-number">1</span>: <span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-number">2</span>: <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-number">3</span>: <span class="hljs-string">&quot;three&quot;</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>keys, vals = <span class="hljs-built_in">zip</span>(*d.items())
+<span class="hljs-meta">&gt;&gt;&gt; </span>keys, vals
+((<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>), (<span class="hljs-string">&#x27;one&#x27;</span>, <span class="hljs-string">&#x27;two&#x27;</span>, <span class="hljs-string">&#x27;three&#x27;</span>))
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="25" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>
+<p>Check if list is not empty</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Non-Pythonic way</span>
+<span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(my_list) &gt; <span class="hljs-number">0</span>:
+    ...
+
+<span class="hljs-comment"># Pythonic way</span>
+<span class="hljs-keyword">if</span> my_list:
+    ...
+</code></pre>
+</li>
+<li>
+<p>Get keys from a dictionary as a list</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(my_dict.keys()) <span class="hljs-comment"># Tedious way</span>
+[<span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;c&#x27;</span>]
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(my_dict) <span class="hljs-comment"># Better way</span>
+[<span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;c&#x27;</span>]
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-marpit-scope-C49El34c="" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="26" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>
+<p>Use <code>if __name__ == &quot;__main__&quot;:</code></p>
+<ul>
+<li>When you have a python file that can be called as a module while also being executed as a script, you should use <code>if __name__ == &quot;__main__&quot;:</code>.</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:
+    main()
+</code></pre>
+</li>
+<li>
+<p>Use ternary operators</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">a = <span class="hljs-number">1</span>
+
+<span class="hljs-comment"># Ehhh! bad</span>
+<span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">0</span>:
+    <span class="hljs-built_in">print</span>(a)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-number">0</span>)
+
+
+<span class="hljs-built_in">print</span>((<span class="hljs-number">0</span>, a)[a &gt; <span class="hljs-number">0</span>]) <span class="hljs-comment"># Good, but tough to interpret</span>
+
+<span class="hljs-built_in">print</span>(a <span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>) <span class="hljs-comment"># Better</span>
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="27" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>
+<p>Use <code>try</code>/<code>except</code>/<code>finally</code></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">try</span>:
+    ...
+<span class="hljs-keyword">except</span>:
+    ...
+<span class="hljs-keyword">finally</span>: <span class="hljs-comment"># This always executes</span>
+    ...
+</code></pre>
+</li>
+<li>
+<p>Use <code>namedtuples</code> for simple models</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> namedtuple
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>Point = namedtuple(<span class="hljs-string">&quot;Point&quot;</span>, [<span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-string">&quot;y&quot;</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>p = Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>p
+Point(x=<span class="hljs-number">1</span>, y=<span class="hljs-number">2</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(p)
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="28" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>
+<p>Use <code>in</code>/<code>not in</code></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> <span class="hljs-keyword">in</span> [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-literal">False</span>
+</code></pre>
+</li>
+<li>
+<p>Use <code>is</code>/<code>is not</code></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>] <span class="hljs-comment"># x is a list</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>y = x         <span class="hljs-comment"># y is a reference to x</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>z = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>] <span class="hljs-comment"># z is a new list</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x <span class="hljs-keyword">is</span> y
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> z
+<span class="hljs-literal">False</span>
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="29" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>
+<p>Use <code>enumerate</code></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> i, item <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>([<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>]):
+<span class="hljs-meta">... </span>    <span class="hljs-built_in">print</span>(i, item)
+...
+<span class="hljs-number">0</span> <span class="hljs-number">2</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span>
+<span class="hljs-number">2</span> <span class="hljs-number">0</span>
+</code></pre>
+</li>
+<li>
+<p>Use walrus <code>:=</code> operator</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(a := <span class="hljs-number">1</span>) <span class="hljs-comment"># Can be used with any function/method call</span>
+<span class="hljs-number">1</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-number">1</span>
+</code></pre>
+<p><em><strong>Note</strong></em>: <em>Walrus <code>:=</code> operator can be used from <strong>Python 3.8</strong> onwards.</em></p>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="30" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>
+<p>Use <code>isinstance</code></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">isinstance</span>(<span class="hljs-number">1</span>, <span class="hljs-built_in">int</span>) <span class="hljs-comment"># check if 1 is an int</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">isinstance</span>(<span class="hljs-number">1.0</span>, (<span class="hljs-built_in">int</span>, <span class="hljs-built_in">float</span>)) <span class="hljs-comment"># check if 1 is an int or float</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">isinstance</span>(<span class="hljs-number">1</span>, <span class="hljs-built_in">str</span>) <span class="hljs-comment"># check if 1 is a string</span>
+<span class="hljs-literal">False</span>
+</code></pre>
+</li>
+<li>
+<p>Use <code>all</code>/<code>any</code></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">all</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]) <span class="hljs-comment"># check if all elements in an iterable are true</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">any</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]) <span class="hljs-comment"># check if any element in an iterable is true</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">any</span>([<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]) <span class="hljs-comment"># check if any element in an iterable is true</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">all</span>([<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]) <span class="hljs-comment"># check if all elements in an iterable are true</span>
+<span class="hljs-literal">False</span>
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="31" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>
+<p>Use <code>zip</code> and <code>zip_longest</code> to iterate over iterables parallelly</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(<span class="hljs-built_in">zip</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]))
+[(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>), (<span class="hljs-number">2</span>, <span class="hljs-number">5</span>), (<span class="hljs-number">3</span>, <span class="hljs-number">6</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> itertools <span class="hljs-keyword">import</span> zip_longest
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(zip_longest([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]), fillvalue=<span class="hljs-number">0</span>)
+[(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>), (<span class="hljs-number">2</span>, <span class="hljs-number">5</span>), (<span class="hljs-number">3</span>, <span class="hljs-number">6</span>), (<span class="hljs-number">0</span>, <span class="hljs-number">7</span>)]
+</code></pre>
+</li>
+<li>
+<p>Use <code>chain</code> to concatenate iterables</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> itertools <span class="hljs-keyword">import</span> chain
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(chain([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]))
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="32" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>
+<p>Convert <code>list</code> of <code>tuple</code>s to <code>dict</code>ionary</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">dict</span>([(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-number">1</span>), (<span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-number">2</span>)])
+{<span class="hljs-string">&#x27;a&#x27;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&#x27;b&#x27;</span>: <span class="hljs-number">2</span>}
+</code></pre>
+</li>
+<li>
+<p>Use <code>dict</code> comprehension</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{k: v <span class="hljs-keyword">for</span> k, v <span class="hljs-keyword">in</span> [(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-number">1</span>), (<span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-number">2</span>)]}
+{<span class="hljs-string">&#x27;a&#x27;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&#x27;b&#x27;</span>: <span class="hljs-number">2</span>}
+</code></pre>
+</li>
+<li>
+<p>Merging Dictionaries with the <code>**</code> operator</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span>d1 = {<span class="hljs-string">&quot;a&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;b&quot;</span>: <span class="hljs-number">5</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>d2 = {<span class="hljs-string">&quot;b&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;c&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;d&quot;</span>: <span class="hljs-number">4</span>}
+<span class="hljs-meta">&gt;&gt;&gt; </span>{**d1, **d2}
+{<span class="hljs-string">&#x27;a&#x27;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&#x27;b&#x27;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&#x27;c&#x27;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&#x27;d&#x27;</span>: <span class="hljs-number">4</span>} <span class="hljs-comment"># merged and overwritten duplicates</span>
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-marpit-scope-AlVzAAIq="" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="33" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ul>
+<li>
+<p>Use generator expressions</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-comment"># generators are lazy, i.e. they are evaluated only when needed</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>(a <span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">if</span> a % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+&lt;generator <span class="hljs-built_in">object</span> &lt;genexpr&gt; at <span class="hljs-number">0x7ff3c7a2c7c0</span>&gt;
+</code></pre>
+</li>
+<li>
+<p>Use <code>Counter</code> to count items in an iterable</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> Counter
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>Counter([<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]) <span class="hljs-comment"># afterall, this is an instance of dict</span>
+Counter({<span class="hljs-number">1</span>: <span class="hljs-number">3</span>, <span class="hljs-number">2</span>: <span class="hljs-number">2</span>, <span class="hljs-number">3</span>: <span class="hljs-number">1</span>})
+</code></pre>
+</li>
+<li>
+<p>Want a Queue, use <code>deque</code></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> deque
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>queue = deque([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], maxlen=<span class="hljs-number">3</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>queue.append(<span class="hljs-number">4</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(queue)
+[<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="34" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>
+<p>Use <code>lambda</code> to create anonymous functions</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">sum</span> = <span class="hljs-keyword">lambda</span> a, b: a + b
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">sum</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+<span class="hljs-number">3</span>
+</code></pre>
+</li>
+<li>
+<p>Use <code>map</code> and <code>filter</code> to apply a function to an iterable</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(<span class="hljs-built_in">map</span>(<span class="hljs-keyword">lambda</span> x: x**<span class="hljs-number">2</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]))
+[<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>, <span class="hljs-number">25</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">list</span>(<span class="hljs-built_in">filter</span>(<span class="hljs-keyword">lambda</span> x: x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]))
+[<span class="hljs-number">2</span>, <span class="hljs-number">4</span>]
+</code></pre>
+</li>
+<li>
+<p>Use <code>reduce</code> to apply a function to an iterable</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> reduce
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span>reduce(<span class="hljs-keyword">lambda</span> x, y: x + y, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]) <span class="hljs-comment"># Sum of a list</span>
+<span class="hljs-number">15</span>
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="35" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>Use <code>traceback</code> module when debugging<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> traceback <span class="hljs-keyword">as</span> tb
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">try</span>:
+<span class="hljs-meta">... </span>    <span class="hljs-number">0</span> / <span class="hljs-number">0</span>
+<span class="hljs-meta">... </span><span class="hljs-keyword">except</span> ZeroDivisionError <span class="hljs-keyword">as</span> e:
+<span class="hljs-meta">... </span>    <span class="hljs-built_in">print</span>(e) <span class="hljs-comment"># Gives only the error message. Not useful for debugging</span>
+<span class="hljs-meta">... </span>    <span class="hljs-built_in">print</span>()
+<span class="hljs-meta">... </span>    tb.print_exception(e, limit=<span class="hljs-number">3</span>) <span class="hljs-comment"># Prints the traceback upto 3 levels deep. Useful for debugging</span>
+<span class="hljs-meta">... </span>
+division by zero
+
+Traceback (most recent call last):
+File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">2</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+ZeroDivisionError: division by zero
+</code></pre>
+<ul>
+<li><code>traceback</code> has many other useful functions for handling errors.</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="36" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ul>
+<li>Use <code>math.isclose</code> to compare floating-point numbers<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">x = <span class="hljs-number">0.1</span> + <span class="hljs-number">0.2</span>
+<span class="hljs-built_in">print</span>(x == <span class="hljs-number">0.3</span>)  <span class="hljs-comment"># False <img class="emoji" draggable="false" alt="😱" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f631.svg" data-marp-twemoji=""/>  </span>
+
+<span class="hljs-comment"># need a small tolerance</span>
+<span class="hljs-keyword">import</span> math
+<span class="hljs-built_in">print</span>(math.isclose(x, <span class="hljs-number">0.3</span>))  <span class="hljs-comment"># True  </span>
+</code></pre>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="37" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="tips-to-increase-efficiency">Tips to increase efficiency</h2>
+<p>Efficiency tips in Python focus on writing code that runs faster and uses fewer resources. Here are some efficiency tips to consider:</p>
+<ol>
+<li>
+<p><strong>Use Built-in Functions:</strong> Python provides many built-in functions for common operations like sorting (<code>sorted()</code>), finding the maximum or minimum value (<code>max()</code>, <code>min()</code>), and summing elements (<code>sum()</code>). Using these functions is often more efficient than writing custom code.</p>
+</li>
+<li>
+<p><strong>Avoid Global Imports:</strong> Import only the functions or classes you need from libraries instead of using wildcard imports (<code>from module import *</code>). This reduces namespace pollution and can slightly improve import times.</p>
+</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="38" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+
+<ol start="3">
+<li>
+<p><strong>Avoid Unnecessary Loops:</strong> Minimize the use of nested loops and try to reduce the complexity of your algorithms. Sometimes, a more efficient data structure can help.</p>
+</li>
+<li>
+<p><strong>Generator Expressions:</strong> Use generator expressions when you need to iterate over a large dataset or generate values lazily. Generators save memory.</p>
+</li>
+<li>
+<p><strong>Set Operations:</strong> When checking for membership or finding unique elements, use sets (<code>set</code>) or dictionaries (<code>dict</code>) instead of lists (<code>list</code>) because sets have faster lookup times.</p>
+</li>
+<li>
+<p><strong>Avoid Repeated Appending:</strong> Instead of repeatedly appending elements to a list in a loop, consider using a list comprehension or <code>join()</code> for strings. Appending in a loop can be slow for large lists.</p>
+</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="39" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ol start="7">
+<li>
+<p><strong>Use <code>collections</code>:</strong> Python's <code>collections</code> module provides specialized data structures like <code>defaultdict</code>, <code>Counter</code>, and <code>deque</code> that can improve performance in certain scenarios.</p>
+</li>
+<li>
+<p><strong>Avoid Global Variables:</strong> Minimize the use of global variables as they can slow down your code's execution. Use local variables or function arguments whenever possible.</p>
+</li>
+<li>
+<p><strong>Profile Your Code:</strong> Use profiling tools like <code>cProfile</code> to identify performance bottlenecks in your code. Optimize only the parts of your code that need it.</p>
+</li>
+<li>
+<p><strong>Vectorized Operations with NumPy:</strong> If you are working with numerical data and need to perform operations on arrays, consider using the NumPy library. NumPy provides highly optimized functions for array operations.</p>
+</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-header="...continued" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="40" data-marpit-pagination-total="43" style="--paginate:true;--header:...continued;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<header>...continued</header>
+<ol start="11">
+<li>
+<p><strong>Concurrency and Parallelism:</strong> When dealing with tasks that can be performed independently, consider using Python's <code>concurrent.futures</code> or <code>multiprocessing</code> libraries to take advantage of multi-core processors.</p>
+</li>
+<li>
+<p><strong>Cython or Cythonize:</strong> If you need to optimize performance-critical code further, consider using Cython, which allows you to write Python-like code that can be compiled to C for improved performance.</p>
+</li>
+<li>
+<p><strong>Memory Management:</strong> Be mindful of memory usage, especially when dealing with large datasets. Use generators to avoid loading everything into memory at once, and consider memory profiling tools like <code>memory_profiler</code>.</p>
+</li>
+<li>
+<p><strong>Algorithm Choice:</strong> The choice of algorithm can have a significant impact on efficiency. Be aware of different algorithms and their time complexities when solving problems.</p>
+</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" data-marpit-pagination="41" data-marpit-pagination-total="43" style="--paginate:true;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;" data-size="16:9">
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p><em>As we conclude our journey through Python best practices, remember this:</em> Python isn't just a programming language; it's a canvas for <em>digital masterpieces</em>. It empowers architects, engineers, and dreamers. It fuels innovation and creativity—from small scripts to digital marvels shaping our future. Python is your <strong>gateway to extraordinary creations</strong>. So, as you step into the coding world, armed with today's knowledge, keep pushing boundaries. The world eagerly awaits your Python-powered brilliance. <strong>Happy coding</strong>, and may your Pythonic adventures be <em>awe-inspiring</em>.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-scope-jo9dUNsH="" data-background-color="#f0f0f0" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" style="--background-color:#f0f0f0;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;background-color:#f0f0f0;background-image:none;--marpit-advanced-background-split:33%;" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg&quot;);background-size:320px 320px;"></figure></div></section></foreignObject><foreignObject width="67%" height="720"><section id="44" data-marpit-scope-jo9dUNsH="" data-background-color="#f0f0f0" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" style="--background-color:#f0f0f0;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;background-color:#f0f0f0;background-image:none;--marpit-advanced-background-split:33%;" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+<h1 id="pythons-symphony">Python's <strong>Symphony</strong></h1>
+<blockquote>
+<p><em>Python code, elegant and neat,<br />
+A language where brilliance takes its seat.<br />
+With simplicity, it does excel,<br />
+In the coder's heart, it casts a spell.</em></p>
+<p><em>From web to AI, it conquers all,<br />
+In Python's world, we stand tall.<br />
+So code away, with joy and might,<br />
+In Python's realm, where dreams take flight.</em></p>
+</blockquote>
+</section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-marpit-scope-jo9dUNsH="" data-background-color="#f0f0f0" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" style="" data-size="16:9" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-scope-JmYMrYS4="" data-background-color="#ffffff" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" style="--background-color:#ffffff;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;background-color:#ffffff;background-image:none;" data-size="16:9" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://images.wallpaperscraft.com/image/single/panda_smile_white_74449_1280x960.jpg&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="45" data-marpit-scope-JmYMrYS4="" data-background-color="#ffffff" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" style="--background-color:#ffffff;--theme:gaia;--style::root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+;background-color:#ffffff;background-image:none;" data-size="16:9" data-marpit-advanced-background="content">
+<h1 id="thank-you">Thank You</h1>
+</section>
+<script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{constructor(){super(),this.svgPreserveAspectRatio="xMinYMid meet";const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver(((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()}))}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){var t,s,o,r,a;this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=null!==(t=this.shadowRoot.querySelector(`div[${e}]`))&&void 0!==t?t:void 0;const l=this.svg;this.svg=null!==(o=null===(s=this.wrapper)||void 0===s?void 0:s.querySelector(`svg[${i}]`))&&void 0!==o?o:void 0,this.svg!==l&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=null!==(a=null===(r=this.svg)||void 0===r?void 0:r.querySelector(`span[${n}]`))&&void 0!==a?a:void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame((()=>{t.style.display=""})))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){var t,e,i,n,s,o,r;let a=Math.ceil(null!==(e=null===(t=this.containerSize)||void 0===t?void 0:t.width)&&void 0!==e?e:0);const l=Math.ceil(null!==(n=null===(i=this.containerSize)||void 0===i?void 0:i.height)&&void 0!==n?n:0);void 0!==this.dataset.downscaleOnly&&(a=Math.max(a,null!==(o=null===(s=this.wrapperSize)||void 0===s?void 0:s.width)&&void 0!==o?o:0));const c=null===(r=this.svg)||void 0===r?void 0:r.querySelector(":scope > foreignObject");if(null==c||c.setAttribute("width",`${a}`),null==c||c.setAttribute("height",`${l}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${a} ${l}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=a<=0||l<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const o=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this.attachShadow({mode:"open"})}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_update(){const t=i?`<style>:host { ${i} }</style>`:"";let e="<slot></slot>";const{autoScaling:n}=this.dataset;if(void 0!==n){e=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===n?"data-downscale-only":""}>${e}</marp-auto-scaling>`}this.shadowRoot.innerHTML=t+e}};let r;const a=Symbol();let l;const c="marpitSVGPolyfill:setZoomFactor,",d=Symbol(),g=Symbol();const h=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[u]:[],i={then:e=>(t?(async()=>{if(void 0===l){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise((t=>{i.addEventListener("load",(()=>t()))}));i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),l=e.getImageData(5,5,1,1).data[3]<128}return l})().then((t=>{null==e||e(t?[u]:[])})):null==e||e([]),i)};return Object.assign(e,i)};let p,m;function u(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",(({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(c)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(m=i)}}catch(t){console.error(t)}})));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,s,o,r;t.style.transform||(t.style.transform="translateZ(0)");const a=i||m||t.currentScale||1;p!==a&&(p=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(r=null===(o=n.y)||void 0===o?void 0:o.baseVal.value)&&void 0!==r?r:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}})),!1!==n&&Array.from(e.querySelectorAll("iframe"),(({contentWindow:t})=>{null==t||t.postMessage(`${c}${n}`,"null"===window.origin?"*":window.origin)}))}function v({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[d])return t[d];let e=!0;const i=()=>{e=!1,delete t[d]};Object.defineProperty(t,d,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await h()}finally{s=!0}})();const o=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(o)};return o(),i}(e);return t?(i(),()=>{}):i}p=1,m=void 0;const b=Symbol(),w=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,a=t[n].proto();null!=r||(r=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is")),r&&a!==HTMLElement?i||customElements.define(s,o(a,{style:t[n].style}),{extends:n}):(i||customElements.define(s,o(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach((t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)})))}window[a]=!0})(e),e[b])return e[b];const i=v({target:e}),n=()=>{i(),delete e[b]},l=Object.assign(n,{cleanup:n,update:()=>w(e)});return Object.defineProperty(e,b,{configurable:!0,value:l}),l},y=document.currentScript;w(y?y.getRootNode():document)}();
+</script></foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-marpit-scope-JmYMrYS4="" data-background-color="#ffffff" data-theme="gaia" data-style=":root {
+    width: 1280px;
+    height: 720px;
+    font-size: 30px;
+    padding: 1.5rem;
+}
+header, footer {
+    text-align: right;
+}
+" style="" data-size="16:9" data-marpit-advanced-background="pseudo"></section></foreignObject></svg></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@3.2.0/lib/bespoke.js.LICENSE.txt */
+!function(){"use strict";function e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var t={from:function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),o=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),i={},a=function(e,t){return(t=t||{}).index=o.indexOf(e),t.slide=e,t},s=function(e,t){i[e]=(i[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(i[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){o[e]&&(n&&l("deactivate",a(n,t)),n=o[e],l("activate",a(n,t)))},d=function(e,t){var r=o.indexOf(n)+e;l(e>0?"next":"prev",a(n,t))&&c(r,t)},u={off:s,on:function(e,t){return(i[e]||(i[e]=[])).push(t),s.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return o.indexOf(n);l("slide",a(o[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:o,destroy:function(e){l("destroy",a(n,e)),i={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u}},n=e(t);const r=document.body,o=(...e)=>history.replaceState(...e),i="presenter",a="next",s=["",i,a],l="bespoke-marp-",c=`data-${l}`,d=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const i=e.toString();return`${t}//${n}${r}${i?"?":""}${i}${o}`},u=()=>r.dataset.bespokeView,f=e=>new URLSearchParams(location.search).get(e),m=(e,t={})=>{var n;const r={location,setter:o,...t},i=new URLSearchParams(r.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?i.set(t,n):i.delete(t)}try{r.setter({...null!==(n=window.history.state)&&void 0!==n?n:{}},"",d(i,r.location))}catch(e){console.error(e)}},g=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}})(),p=e=>{try{return localStorage.getItem(e)}catch(e){return null}},v=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},h=e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}},y=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},b=e=>{e.parent.classList.add(`${l}parent`),e.slides.forEach((e=>e.classList.add(`${l}slide`))),e.on("activate",(t=>{const n=`${l}active`,r=t.slide,o=r.classList,i=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),y(e,!0)})),o.add(n),y(r,!1),i){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},w=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const i=t<r||t===r&&n<=o;e.setAttribute(`${c}fragment`,(i?"":"in")+"active");const a=`${c}current-fragment`;t===r&&n===o?e.setAttribute(a,"current"):e.removeAttribute(a)}))})),e.fragmentIndex=o;const i={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",i)};e.on("next",(({fragment:i=!0})=>{if(i){if(r(1))return o(t,n+1),!1;const i=t+1;e.fragments[i]&&o(i,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const i=e.fragments[t+1];i&&o(t+1,i.length-1)}})),e.on("prev",(({fragment:i=!0})=>{if(r(-1)&&i)return o(t,n-1),!1;const a=t-1;e.fragments[a]&&o(a,e.fragments[a].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},x=document,k=()=>!(!x.fullscreenEnabled&&!x.webkitFullscreenEnabled),$=()=>!(!x.fullscreenElement&&!x.webkitFullscreenElement),E=e=>{e.fullscreen=()=>{k()&&(async()=>{return $()?null===(e=x.exitFullscreen||x.webkitExitFullscreen)||void 0===e?void 0:e.call(x):((e=x.body)=>{var t;return null===(t=e.requestFullscreen||e.webkitRequestFullscreen)||void 0===t?void 0:t.call(e)})();var e})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!k()||(e.fullscreen(),t.preventDefault())}))},L=`${l}inactive`,S=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let i;const a=()=>{i&&clearTimeout(i),i=setTimeout((()=>{r.add(L),o()}),e),r.contains(L)&&(r.remove(L),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,a);setTimeout(a,0)},P=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],_=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(P.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},T=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("marp-auto-scaling, [data-auto-scaling], [data-marp-fitting]");t.setAttribute(`${c}load`,e?"":"hideable")}}))},I=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(i=>{let a=!1;const s=(e,t)=>{e&&(a=a||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),(null==e?void 0:e.parentElement)&&s(e.parentElement,t)};if(0!==i.deltaX&&s(i.target,"X"),0!==i.deltaY&&s(i.target,"Y"),a)return;i.preventDefault();const l=Math.sqrt(i.deltaX**2+i.deltaY**2);if(void 0!==i.wheelDelta){if(void 0===i.webkitForce&&Math.abs(i.wheelDelta)<40)return;if(i.deltaMode===i.DOM_DELTA_PIXEL&&l<4)return}else if(i.deltaMode===i.DOM_DELTA_PIXEL&&l<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const c=Date.now()-o<e,d=l<=n;if(n=l,c||d)return;let u;(i.deltaX>0||i.deltaY>0)&&(u="next"),(i.deltaX<0||i.deltaY<0)&&(u="prev"),u&&(t[u](),o=Date.now())}))},M=(e=`.${l}osc`)=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${c}osc=${JSON.stringify(e)}]`).forEach(n)};return k()||n("fullscreen",(e=>e.style.display="none")),g||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?null==e||e.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>y(t,!1))),e.on("marp-inactive",(()=>y(t,!0))),k()&&(e=>{for(const t of["","webkit"])x.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",k()&&$())))))}},O=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),i=Number.parseInt(n,10)+1;i>=e.fragments[o].length&&(o+=1,i=0),e.slide(o,{fragment:i})}}))};var A=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let C=e=>String(e).replace(/[&<>"']/g,(e=>`&${D[e]};`)),D={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},N="dangerouslySetInnerHTML",B={className:"class",htmlFor:"for"},q={};function K(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==N&&(r+=` ${B[e]?B[e]:C(e)}="${C(t[e])}"`);r+=">"}if(-1===A.indexOf(e)){if(t[N])r+=t[N].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===q[e]?e:C(e)}r+=e?`</${e}>`:""}return q[r]=!0,r}const j=({children:e})=>K(null,null,...e),F=`${l}presenter-`,V={container:`${F}container`,dragbar:`${F}dragbar-container`,next:`${F}next`,nextContainer:`${F}next-container`,noteContainer:`${F}note-container`,noteWrapper:`${F}note-wrapper`,noteButtons:`${F}note-buttons`,infoContainer:`${F}info-container`,infoPage:`${F}info-page`,infoPageText:`${F}info-page-text`,infoPagePrev:`${F}info-page-prev`,infoPageNext:`${F}info-page-next`,noteButtonsBigger:`${F}note-bigger`,noteButtonsSmaller:`${F}note-smaller`,infoTime:`${F}info-time`,infoTimer:`${F}info-timer`},U=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=V.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",K(j,null,K("div",{class:V.nextContainer},K("iframe",{class:V.next,src:"?view=next"})),K("div",{class:V.dragbar}),K("div",{class:V.noteContainer},K("div",{class:V.noteWrapper}),K("div",{class:V.noteButtons},K("button",{class:V.noteButtonsSmaller,tabindex:"-1",title:"Smaller notes font size"},"Smaller notes font size"),K("button",{class:V.noteButtonsBigger,tabindex:"-1",title:"Bigger notes font size"},"Bigger notes font size"))),K("div",{class:V.infoContainer},K("div",{class:V.infoPage},K("button",{class:V.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),K("span",{class:V.infoPageText}),K("button",{class:V.infoPageNext,tabindex:"-1",title:"Next"},"Next")),K("time",{class:V.infoTime,title:"Current time"}),K("time",{class:V.infoTimer,title:"Timer"})))),t})(e.parent)),(e=>{let t=!1;r(V.dragbar).addEventListener("mousedown",(()=>{t=!0,r(V.dragbar).classList.add("active")})),window.addEventListener("mouseup",(()=>{t=!1,r(V.dragbar).classList.remove("active")})),window.addEventListener("mousemove",(e=>{if(!t)return;const n=e.clientX/document.documentElement.clientWidth*100;r(V.container).style.setProperty("--bespoke-marp-presenter-split-ratio",`${Math.max(0,Math.min(100,n))}%`)})),r(V.nextContainer).addEventListener("click",(()=>e.next()));const n=r(V.next),o=(i=n,(e,t)=>{var n;return null===(n=i.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var i;n.addEventListener("load",(()=>{r(V.nextContainer).classList.add("active"),o(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>o(e,t)))}));const a=document.querySelectorAll(".bespoke-marp-note");a.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(V.noteWrapper).appendChild(e)})),e.on("activate",(()=>a.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide())))));let s=0;const l=e=>{s=Math.max(-5,s+e),r(V.noteContainer).style.setProperty("--bespoke-marp-note-font-scale",(1.2**s).toFixed(4))},c=()=>l(1),d=()=>l(-1),u=r(V.noteButtonsBigger),f=r(V.noteButtonsSmaller);u.addEventListener("click",(()=>{u.blur(),c()})),f.addEventListener("click",(()=>{f.blur(),d()})),document.addEventListener("keydown",(e=>{"+"===e.key&&c(),"-"===e.key&&d()}),!0),e.on("activate",(({index:t})=>{r(V.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const m=r(V.infoPagePrev),g=r(V.infoPageNext);m.addEventListener("click",(t=>{m.blur(),e.prev({fragment:!t.shiftKey})})),g.addEventListener("click",(t=>{g.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{m.disabled=0===t&&0===r,g.disabled=t===e.slides.length-1&&r===n.length-1}));let p=new Date;const v=()=>{const e=new Date,t=e=>`${Math.floor(e)}`.padStart(2,"0"),n=e.getTime()-p.getTime(),o=t(n/1e3%60),i=t(n/1e3/60%60),a=t(n/36e5%24);r(V.infoTime).textContent=e.toLocaleTimeString(),r(V.infoTimer).textContent=`${a}:${i}:${o}`};v(),setInterval(v,250),r(V.infoTimer).addEventListener("click",(()=>{p=new Date}))})(e)},X=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:H},presenterUrl:{enumerable:!0,get:R}}),g&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function H(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,F+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function R(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),d(e)}const W=e=>{const t=u();return t===a&&e.appendChild(document.createElement("span")),{"":X,[i]:U,[a]:O}[t]},J=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},Y=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},z=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{let n=t.fragment?Y(f("f")||""):null;((t,n)=>{const{min:r,max:o}=Math,{fragments:i,slides:a}=e,s=o(0,r(t,a.length-1)),l=o(0,r(n||0,i[s].length-1));s===e.slide()&&l===e.fragmentIndex||e.slide(s,{fragment:l})})((()=>{var t,r;if(location.hash){const[o]=location.hash.slice(1).split(":~:");if(/^\d+$/.test(o))return(null!==(t=Y(o))&&void 0!==t?t:1)-1;const i=document.getElementById(o)||document.querySelector(`a[name="${CSS.escape(o)}"]`);if(i){const{length:t}=e.slides;for(let o=0;o<t;o+=1)if(e.slides[o].contains(i)){const t=null===(r=e.fragments)||void 0===r?void 0:r[o],a=i.closest("[data-marpit-fragment]");if(t&&a){const e=t.indexOf(a);e>=0&&(n=e)}return o}}}return 0})(),n)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||m({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),m({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},G=(e={})=>{var t;const n=e.key||(null===(t=window.history.state)||void 0===t?void 0:t.marpBespokeSyncKey)||Math.random().toString(36).slice(2),r=`bespoke-marp-sync-${n}`;var i;i={marpBespokeSyncKey:n},m({},{setter:(e,...t)=>o({...e,...i},...t)});const a=()=>{const e=p(r);return e?JSON.parse(e):Object.create(null)},s=e=>{const t=a(),n={...t,...e(t)};return v(r,JSON.stringify(n)),n},l=()=>{window.removeEventListener("pageshow",l),s((e=>({reference:(e.reference||0)+1})))};return e=>{l(),Object.defineProperty(e,"syncKey",{value:n,enumerable:!0});let t=!0;setTimeout((()=>{e.on("fragment",(e=>{t&&s((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(n=>{if(n.key===r&&n.oldValue&&n.newValue){const r=JSON.parse(n.oldValue),o=JSON.parse(n.newValue);if(r.index!==o.index||r.fragmentIndex!==o.fragmentIndex)try{t=!1,e.slide(o.index,{fragment:o.fragmentIndex,forSync:!0})}finally{t=!0}}}));const o=()=>{const{reference:e}=a();void 0===e||e<=1?h(r):s((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",l),o()})),e.on("destroy",o)}},{PI:Q,abs:Z,sqrt:ee,atan2:te}=Math,ne={passive:!0},re=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,i=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?i(e[0]):void 0}),ne),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=i(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=ee(Z(n)**2+Z(o)**2),r.radian=te(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+Q)%(2*Q)-Q;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),ne)},oe=new Map;oe.clear(),oe.set("none",{backward:{both:void 0,incoming:void 0,outgoing:void 0},forward:{both:void 0,incoming:void 0,outgoing:void 0}});const ie={both:"",outgoing:"outgoing-",incoming:"incoming-"},ae={forward:"",backward:"-backward"},se=e=>`--marp-bespoke-transition-animation-${e}`,le=e=>`--marp-transition-${e}`,ce=se("name"),de=se("duration"),ue=e=>new Promise((t=>{const n={},r=document.createElement("div"),o=e=>{r.remove(),t(e)};r.addEventListener("animationstart",(()=>o(n))),Object.assign(r.style,{animationName:e,animationDuration:"1s",animationFillMode:"both",animationPlayState:"paused",position:"absolute",pointerEvents:"none"}),document.body.appendChild(r);const i=getComputedStyle(r).getPropertyValue(le("duration"));i&&(n.defaultDuration=i),((e,t)=>{requestAnimationFrame((()=>{e.style.animationPlayState="running",requestAnimationFrame((()=>t(void 0)))}))})(r,o)})),fe=async e=>oe.has(e)?oe.get(e):(e=>{const t={},n=[];for(const[r,o]of Object.entries(ie))for(const[i,a]of Object.entries(ae)){const s=`marp-${o}transition${a}-${e}`;n.push(ue(s).then((e=>{t[i]=t[i]||{},t[i][r]=e?{...e,name:s}:void 0})))}return Promise.all(n).then((()=>t))})(e).then((t=>(oe.set(e,t),t))),me=e=>Object.values(e).flatMap(Object.values).every((e=>!e)),ge=(e,{type:t,backward:n})=>{const r=e[n?"backward":"forward"],o=(()=>{const e=r[t],n=e=>({[ce]:e.name});if(e)return n(e);if(r.both){const e=n(r.both);return"incoming"===t&&(e[se("direction")]="reverse"),e}})();return!o&&n?ge(e,{type:t,backward:!1}):o||{[ce]:"__bespoke_marp_transition_no_animation__"}},pe=e=>{if(e)try{const t=JSON.parse(e);if((e=>{if("object"!=typeof e)return!1;const t=e;return"string"==typeof t.name&&(void 0===t.duration||"string"==typeof t.duration)})(t))return t}catch(e){}},ve="_tSId",he="_tA",ye="bespoke-marp-transition-warming-up",be=window.matchMedia("(prefers-reduced-motion: reduce)"),we="__bespoke_marp_transition_reduced_outgoing__",xe="__bespoke_marp_transition_reduced_incoming__",ke={forward:{both:void 0,incoming:{name:xe},outgoing:{name:we}},backward:{both:void 0,incoming:{name:xe},outgoing:{name:we}}},$e=e=>{if(!document.startViewTransition)return;const t=t=>(void 0!==t&&(e._tD=t),e._tD);let n;t(!1),((...e)=>{const t=[...new Set(e).values()];return Promise.all(t.map((e=>fe(e)))).then()})(...Array.from(document.querySelectorAll("section[data-transition], section[data-transition-back]")).flatMap((e=>[e.dataset.transition,e.dataset.transitionBack].flatMap((e=>{const t=pe(e);return[null==t?void 0:t.name,(null==t?void 0:t.builtinFallback)?`__builtin__${t.name}`:void 0]})).filter((e=>!!e))))).then((()=>{document.querySelectorAll("style").forEach((e=>{e.innerHTML=e.innerHTML.replace(/--marp-transition-duration:[^;}]*[;}]/g,(e=>e.slice(0,-1)+"!important"+e.slice(-1)))}))}));const r=(n,{back:r,cond:o})=>i=>{var a;const s=t();if(s)return!!i[he]||!("object"!=typeof s||(s.skipTransition(),!i.forSync));if(!o(i))return!0;const l=e.slides[e.slide()],c=()=>{var e;return null!==(e=i.back)&&void 0!==e?e:r},d="data-transition"+(c()?"-back":""),u=l.querySelector(`section[${d}]`);if(!u)return!0;const f=pe(null!==(a=u.getAttribute(d))&&void 0!==a?a:void 0);return!f||((async(e,{builtinFallback:t=!0}={})=>{let n=await fe(e);if(me(n)){if(!t)return;return n=await fe(`__builtin__${e}`),me(n)?void 0:n}return n})(f.name,{builtinFallback:f.builtinFallback}).then((e=>{if(!e){t(!0);try{n(i)}finally{t(!1)}return}let r=e;be.matches&&(console.warn("Use a constant animation to transition because preferring reduced motion by viewer has detected."),r=ke);const o=document.getElementById(ve);o&&o.remove();const a=document.createElement("style");a.id=ve,document.head.appendChild(a),((e,t)=>{const n=[`:root{${le("direction")}:${t.backward?-1:1};}`,":root:has(.bespoke-marp-inactive){cursor:none;}"],r=t=>{var n,o,i;const a=(null===(n=e[t].both)||void 0===n?void 0:n.defaultDuration)||(null===(o=e[t].outgoing)||void 0===o?void 0:o.defaultDuration)||(null===(i=e[t].incoming)||void 0===i?void 0:i.defaultDuration);return"forward"===t?a:a||r("forward")},o=t.duration||r(t.backward?"backward":"forward");void 0!==o&&n.push(`::view-transition-group(*){${de}:${o};}`);const i=e=>Object.entries(e).map((([e,t])=>`${e}:${t};`)).join("");return n.push(`::view-transition-old(root){${i(ge(e,{...t,type:"outgoing"}))}}`,`::view-transition-new(root){${i(ge(e,{...t,type:"incoming"}))}}`),n})(r,{backward:c(),duration:f.duration}).forEach((e=>{var t;return null===(t=a.sheet)||void 0===t?void 0:t.insertRule(e)}));const s=document.documentElement.classList;s.add(ye);let l=!1;const d=()=>{l||(n(i),l=!0,s.remove(ye))},u=()=>{t(!1),a.remove(),s.remove(ye)};try{t(!0);const e=document.startViewTransition(d);t(e),e.finished.finally(u)}catch(e){console.error(e),d(),u()}})),!1)};e.on("prev",r((t=>e.prev({...t,[he]:!0})),{back:!0,cond:e=>{var t;return e.index>0&&!((null===(t=e.fragment)||void 0===t||t)&&n.fragmentIndex>0)}})),e.on("next",r((t=>e.next({...t,[he]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",r((t=>e.slide(t.index,{...t,[he]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let Ee;const Le=()=>(void 0===Ee&&(Ee="wakeLock"in navigator&&navigator.wakeLock),Ee),Se=async()=>{const e=Le();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},Pe=async()=>{if(!Le())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&Se()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await Se(),e};((e=document.getElementById(":$p"))=>{(()=>{const e=f("view");r.dataset.bespokeView=e===a||e===i?e:""})();const t=(e=>{const t=f(e);return m({[e]:void 0}),t})("sync")||void 0;n.from(e,((...e)=>{const t=s.findIndex((e=>u()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],G({key:t})],[[1,1,1],W(e)],[[1,1,0],_],[[1,1,1],b],[[1,0,0],S()],[[1,1,1],T],[[1,1,1],z({history:!1})],[[1,1,0],I()],[[1,1,0],E],[[1,0,0],J],[[1,1,0],re()],[[1,0,0],M()],[[1,0,0],$e],[[1,1,1],w],[[1,1,0],Pe]))})()}();</script></body></html>
