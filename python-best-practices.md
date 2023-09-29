@@ -73,8 +73,8 @@ Although, if you have any questions, please feel free to stop me and ask.
 
 1. [PEP 8 Style Guide](#5)
 2. [List Comprehensions](#10)
-3. [Setting Dictionary Values](#11)
-4. [Getting Values from Dictionary](#12)
+3. [Getting Values from Dictionary](#11)
+4. [Setting Dictionary Values](#12)
 5. [Asserting Earlier is Better than Afterwards](#13)
 6. [Exception Handling](#15)
 7. [Minimalism > Complexity](#16)
@@ -150,7 +150,6 @@ Although, if you have any questions, please feel free to stop me and ask.
     ```
 
 ---
-<!-- header: '...continued' -->
 
 - **Whitespace in Expressions and Statements**: PEP 8 specifies guidelines for using whitespace around operators and commas, making your code more readable.
     ```python
@@ -166,7 +165,6 @@ Although, if you have any questions, please feel free to stop me and ask.
 - **Blank Lines**: PEP 8 suggests using blank lines to separate functions, classes, and logical sections of code to improve readability.
 
 ---
-<!-- header: '...continued' -->
 
 - **Naming Conventions**: PEP 8 provides rules for naming variables, constants, functions, classes, and modules.
     ```python
@@ -190,7 +188,6 @@ Although, if you have any questions, please feel free to stop me and ask.
     ```
 
 ---
-<!-- header: '...continued' -->
 
 - **Comments and Docstrings**: Document your code with comments and docstrings.
     ```python
@@ -205,7 +202,7 @@ Although, if you have any questions, please feel free to stop me and ask.
 Visit for reference: https://peps.python.org/pep-0008/
 
 ---
-
+<!-- header: '' -->
 ## **List** Comprehensions
 
 - Use list comprehensions for concise code.
@@ -223,22 +220,6 @@ for num in numbers:
 squared = [num * num for num in numbers]
 ```
 
----
-
-## **Set**ting dictionary values
-- Let's say we have a dictionary named `category_items_map`.
-- Now if we want to an item to the `"flowers"` category in the dictionary. _Assuming we don't know the existing contents_
-    ```python
-    >>> # Most of us use the following syntax
-    >>> category_items_map["flowers"] = category_items_map.get("flowers", []) + ["lily"]
-    >>> 
-    >>> # A better way would be to use
-    >>> category_items_map.setdefault("flowers", []).append("lotus")
-    >>> 
-    >>> category_items_map
-    {"flowers": ["rose", "lily", "lily"]}
-    ```
-- The above `setdefault()` method functionality can be achieved using the [**`defaultdict`**](https://realpython.com/python-defaultdict/) class from the `collections` module. The only difference is that it's not as flexible in terms of the type of the default values.
 ---
 
 ## **Get**ting values from dictionary
@@ -261,6 +242,22 @@ KeyError: 4
 'not found'
 >>> 
 ```
+---
+
+## **Set**ting dictionary values
+- Let's say we have a dictionary named `category_items_map`.
+- Now if we want to an item to the `"flowers"` category in the dictionary. _Assuming we don't know the existing contents_
+    ```python
+    >>> # Most of us use the following syntax
+    >>> category_items_map["flowers"] = category_items_map.get("flowers", []) + ["lily"]
+    >>> 
+    >>> # A better way would be to use
+    >>> category_items_map.setdefault("flowers", []).append("lotus")
+    >>> 
+    >>> category_items_map
+    {"flowers": ["rose", "lily", "lily"]}
+    ```
+- The above `setdefault()` method functionality can be achieved using the [**`defaultdict`**](https://realpython.com/python-defaultdict/) class from the `collections` module. The only difference is that it's not as flexible in terms of the type of the default values.
 
 ---
 
@@ -720,7 +717,7 @@ dc_villains = DB.query("villains", {"universe": "DC"})
     >>> x is y
     True
     >>> x is not z
-    False
+    True
     ```
 
 ---
