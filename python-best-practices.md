@@ -42,7 +42,7 @@ by **Subhayu Kumar Bala**
 
 **Please Note:** This presentation is not an Introduction to Python.
 
-It assumes a basic familiarity with Python programming concepts and focuses on best practices and advanced topics. If you are new to Python, we recommend starting with introductory resources before diving into the topics covered here.
+It assumes a basic familiarity with Python programming concepts and focuses on best practices and advanced topics.
 
 This presentation is designed for those who have some experience with Python and want to explore more advanced techniques and best practices.
 
