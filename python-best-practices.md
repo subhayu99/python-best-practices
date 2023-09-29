@@ -34,7 +34,7 @@ by **Subhayu Kumar Bala**
         color: white;
         font-size: 25px;
         text-align: justify;
-        padding: 5rem;
+        padding: 4rem;
     };
 </style>
 
@@ -50,6 +50,67 @@ Although, if you have any questions, please feel free to stop me and ask.
 
 ---
 <!-- backgroundColor: '' -->
+<style scoped>
+    h2 {
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    section {
+        font-size: 30px;
+        text-align: justify;
+    };
+    ol {
+        padding-left: 50px;
+    }
+    a {
+        padding-left: 10px;
+        text-decoration: none;
+    }
+</style>
+
+## Agenda
+
+1. [PEP 8 Style Guide](#5)
+2. [List Comprehensions](#10)
+3. [Setting Dictionary Values](#11)
+4. [Getting Values from Dictionary](#12)
+5. [Asserting Earlier is Better than Afterwards](#13)
+6. [Exception Handling](#15)
+7. [Minimalism > Complexity](#16)
+8. [Modularize Code](#17)
+9. [Linting and Code Analysis](#18)
+10. [Check Python Version](#19)
+
+---
+<style scoped>
+    section {
+        font-size: 30px;
+        text-align: justify;
+    };
+    ol {
+        padding-left: 50px;
+    }
+    a {
+        padding-left: 10px;
+        text-decoration: none;
+    }
+</style>
+
+11. [Use Virtual Environments](#19)
+12. [Write Object-Oriented Code](#20)
+13. [Use Dunder Methods](#22)
+14. [Use pathlib.Path for Storing Paths](#23)
+15. [Use Relative Paths Instead of Absolute Paths](#24)
+16. [Use f-strings](#25)
+17. [Use a Config File for Storing Project Settings](#26)
+18. [Always Create a Uniform Interface](#27)
+19. [Tips to Improve Your Python Game](#28)
+20. [Tips to Increase Efficiency](#41)
+21. [Conclusion](#45)
+22. [Python's Symphony](#46)
+
+---
 <!-- paginate: true -->
 
 ## Follow the **PEP 8** Style Guide for Python Code
@@ -840,7 +901,7 @@ dc_villains = DB.query("villains", {"universe": "DC"})
 ---
 <!-- header: '' -->
 
-## Tips to increase efficiency
+## Tips to **increase efficiency**
 
 Efficiency tips in Python focus on writing code that runs faster and uses fewer resources. Here are some efficiency tips to consider:
 
@@ -882,9 +943,11 @@ Efficiency tips in Python focus on writing code that runs faster and uses fewer 
 ---
 <!-- header: '' -->
 
-## **Conclusion**
+## **Conclusion:** Python Mastery Awaits
 
-*As we conclude our journey through Python best practices, remember this:* Python isn't just a programming language; it's a canvas for _digital masterpieces_. It empowers architects, engineers, and dreamers. It fuels innovation and creativity—from small scripts to digital marvels shaping our future. Python is your **gateway to extraordinary creations**. So, as you step into the coding world, armed with today's knowledge, keep pushing boundaries. The world eagerly awaits your Python-powered brilliance. **Happy coding**, and may your Pythonic adventures be _awe-inspiring_.
+Incorporate these Python best practices into your coding routine to elevate your skills. 
+By adhering to style guides, modularizing code, and embracing simplicity, you'll write cleaner, more efficient code. 
+Remember to stay updated, embrace new features, and enjoy your Python journey to the fullest. 
 
 ---
 ![bg w:320 h:320 right:33%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
@@ -925,11 +988,14 @@ Efficiency tips in Python focus on writing code that runs faster and uses fewer 
 ![bg](https://images.wallpaperscraft.com/image/single/panda_smile_white_74449_1280x960.jpg)
 <style scoped>
     h1 {
-        font-size: 100px;
-        /* text-align: center; */
-        padding-top: 220px;
+        font-size: 85px;
+        padding-top: 200px;
         color: #353540;
+    }
+    h2 {
+        font-size: 55px;
     }
 </style>
 
 # Thank You
+## Happy Coding!
